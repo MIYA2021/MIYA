@@ -80,4 +80,9 @@ p {
 	cursor: pointer;
   }
   
-  
+  footer{
+    font-size: 15px;
+	margin: 25px;
+	width: 350px;
+	height: 200px;
+  }
