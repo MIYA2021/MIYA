@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <heda>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>MIYA</title>
+        <link rel="icon" href="favicon.ico">
+        <link rel="stylesheet" type="text/css" href="load.css">
+    </heda>
+    <body>
+        <div id="loading-wrapper">
+            <div id="loading-text">読み込み中</div>
+            <div id="loading-content"></div>
+          </div>
+          <script>
+            setTimeout(function() {
+                window.location.href = "top.html"; // 5秒後にtop.htmlに遷移
+            }, 5000); // 5秒後に切り替わるように設定
+        </script>
+        <script src="load.js"></script>
+    </body>
+</html>
