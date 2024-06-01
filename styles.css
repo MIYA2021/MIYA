@@ -340,18 +340,4 @@ SP
 	cursor: pointer;
   }
   
-.sns-button {
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-.twitter {
-    background-color: #1da1f2; /* Twitterのカラーコード */
-}
-.twitter:hover {
-    background-color: #0d8bf0; /* ホバー時の背景色 */
-}
+
