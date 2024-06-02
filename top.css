@@ -199,15 +199,9 @@ Video
 /*-------------------------------------------
 Pickup
 -------------------------------------------*/
-#pickup {
-  width: 100%;
-  padding: 100px 0 50px 0;
-}
 #pickup .slick-area {
-  font-size: 0;
 }
 #pickup .slick-area li {
-  padding: 0 30px;
 }
 /*-------------------------------------------
 Feature
