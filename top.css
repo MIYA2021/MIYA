@@ -200,17 +200,20 @@ Video
 /*-------------------------------------------
 Pickup
 -------------------------------------------*/
-#pickup {
-  width: 100%;
-  padding: 100px 0 50px 0;
-}
 #pickup .slick-area {
-  font-size: 0;
-}
-#pickup .slick-area li {
-  padding: 0 30px;
+  display: flex;
+  flex-wrap: wrap; /* 要素が横幅を超えた場合に折り返す */
 }
 
+#pickup .slick-area li {
+  flex: 0 0 calc(33% - 50px); /* 要素の幅を調整して横並びに */
+  margin: 0 5px 5px 0; /* 要素間の余白を設定 */
+}
+
+.slick-area img {
+  width: 300px; /* 幅を300pxに設定 */
+  height: 350px; /* 高さを350pxに設定 */
+}
 /*-------------------------------------------
 Feature
 -------------------------------------------*/
