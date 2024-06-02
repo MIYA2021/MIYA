@@ -191,7 +191,7 @@ Main
 Video
 -------------------------------------------*/
 #bg-video {
-  width: 100%;
+  width: 150%;
   max-height: 960px;
   object-fit: cover;
 }
