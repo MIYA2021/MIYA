@@ -71,7 +71,7 @@ li {
   padding: 20px 40px;
   position: fixed;
   z-index: 10;
-  background-color: #fff;
+  background-color: #585858;
 }
 
 /*
@@ -85,9 +85,9 @@ li {
   left: -300px;
   bottom: 0;
   width: 300px;
-  color: #fff;
+  color: #ffffff;
   padding: 60px 25px;
-  background-color: #121212;
+  background-color: #3b3b3b;
   overflow-x: hidden;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
@@ -136,7 +136,7 @@ li {
   left: 0;
   width: 30px;
   height: 2px;
-  background-color: #333;
+  background-color: #ffffff;
   border-radius: 4px;
   transition: all .5s;
 }
@@ -185,6 +185,16 @@ Main
 -------------------------------------------*/
 #main {
   padding-top: 80px;
+}
+
+#main h3 {
+  position: absolute; /* 絶対位置指定 */
+  top: 50%; /* 上端を親要素の中央に */
+  left: 50%; /* 左端を親要素の中央に */
+  transform: translate(-50%, -50%); /* 中央揃え */
+  z-index: 1; /* ビデオより手前に配置 */
+  color: #ffffff;
+  font-size: 300px;
 }
 
 /*-------------------------------------------
