@@ -186,15 +186,24 @@ Main
 #main {
   padding-top: 80px;
 }
-
+@keyframes slideLeft {
+  0% {
+    transform: translateX(0); /* 初期位置 */
+  }
+  100% {
+    transform: translateX(-100%); /* 左に移動 */
+  }
+}
 #main h3 {
   position: absolute; /* 絶対位置指定 */
-  top: 50%; /* 上端を親要素の中央に */
-  left: 50%; /* 左端を親要素の中央に */
+  top: 0%; /* 上端を親要素の中央に */
+  left: 5%; /* 左端を親要素の中央に */
   transform: translate(-50%, -50%); /* 中央揃え */
   z-index: 1; /* ビデオより手前に配置 */
   color: #ffffff;
   font-size: 300px;
+  white-space: nowrap; /* テキストが折り返されないように設定 */
+  animation: slideLeft 6s linear infinite; /* 左にループするアニメーション */
  }
 /*-------------------------------------------
 Video
