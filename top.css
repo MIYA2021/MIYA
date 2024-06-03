@@ -1,6 +1,7 @@
 @charset "UTF-8";
-@media screen and (max-width: 600px) and (max-width: 1024px) {
+
 /*========= レイアウトのためのCSS ===============*/
+@media screen and (max-width: 768px) {
 #container{
   width:100%;
   height: 100vh;
@@ -58,7 +59,7 @@ li {
   transform: translateY(20px);
   transition: all 1s;
 }
-
+}
 /*-------------------------------------------
 ヘッダー
 -------------------------------------------*/
@@ -369,5 +370,4 @@ SP
 	padding: 10px 20px;
 	cursor: pointer;
   }
-}
 
