@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@media screen and (max-width: 600px) {
 /*========= レイアウトのためのCSS ===============*/
 #container{
   width:100%;
@@ -297,7 +298,6 @@ repeatで全ての要素に対して適用
 /*-------------------------------------------
 SP
 -------------------------------------------*/
-@media screen and (max-width: 600px) {
   .sec-title {
     font-size: 1.5rem;
     margin-bottom: 20px;
@@ -362,7 +362,6 @@ SP
   #contact .contact-form .button input {
     width: 100%;
   }
-}
 .input[type="submit"] {
 	background-color: #333;
 	color: #fff;
@@ -370,5 +369,5 @@ SP
 	padding: 10px 20px;
 	cursor: pointer;
   }
-  
+}
 
