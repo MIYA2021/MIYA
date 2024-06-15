@@ -20,7 +20,6 @@ a:hover{
 
 html {
   font-size: 100%;
-  overflow-x: hidden; /* サイト全体の横スクロールを無効にする */
 }
 body {
   color: #121212;
@@ -53,9 +52,13 @@ li {
 フェード表示させる要素に使用するためのクラス
 */
 .fadein {
-  opacity : 0;
-  transform: translateY(20px);
-  transition: all 1s;
+  opacity: 1;
+  transform: translateY(0);
+  transition: none; /* この行を追加 */
+}
+
+#feature .grid .item {
+  transition: none; /* この行を追加 */
 }
 
 /*-------------------------------------------
@@ -185,36 +188,32 @@ li {
 /*-------------------------------------------
 Main
 -------------------------------------------*/
-#main {
-  padding-top: 80px;
-}
-@keyframes slideLeft {
-  0% {
-    transform: translateX(0); /* 初期位置 */
-  }
-  100% {
-    transform: translateX(-100%); /* 左に移動 */
-  }
-}
-#main h3 {
-  position: absolute; /* 絶対位置指定 */
-  top: 0%; /* 上端を親要素の中央に */
-  left: 5%; /* 左端を親要素の中央に */
-  transform: translate(-50%, -50%); /* 中央揃え */
-  z-index: 1; /* ビデオより手前に配置 */
-  color: #ffffff;
-  font-size: 300px;
-  white-space: nowrap; /* テキストが折り返されないように設定 */
-  animation: slideLeft 6s linear infinite; /* 左にループするアニメーション */
- }
+
 /*-------------------------------------------
 Video
 -------------------------------------------*/
-#bg-video {
+bg-video {
   width: 100%;
   max-height: 900px;
   object-fit: cover;
   overflow-x: hidden;
+}
+
+#video {
+  position: relative; 
+  padding-top: 80px;
+  overflow: hidden; 
+}
+
+h3.slide-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 350px;
+  white-space: nowrap;
+  animation: slideTextLeft 6s linear infinite;
 }
 
 /*-------------------------------------------
