@@ -72,9 +72,8 @@ li {
 #header {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  padding: 20px 40px;
   z-index: 10;
-  background-color: #585858;
   overflow-x: hidden;
 }
 
@@ -91,7 +90,7 @@ li {
   width: 300px;
   color: #ffffff;
   padding: 60px 25px;
-  background-color: #3b3b3b;
+  background-color: #414141;
   overflow-x: hidden;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
@@ -100,7 +99,7 @@ li {
   opacity: 0;
 }
 #navi a {
-  color: #fff;
+  color: #aeaeae;
 }
 .open #navi {
   left: 0;
@@ -112,13 +111,13 @@ li {
 }
 #navi ul.nav-menu {
   margin-bottom: 60px;
-  border-top: solid 1px #fff;
+  border-top: solid 1px #000000;
 }
 #navi ul.nav-menu li {
   position: relative;
   margin: 0;
   padding: 20px 0;
-  border-bottom: solid 1px #fff;
+  border-bottom: solid 1px #f6f6f6;
 }
 #navi ul.nav-sns li {
   padding: 5px 0;
@@ -139,7 +138,7 @@ li {
   left: 0;
   width: 30px;
   height: 2px;
-  background-color: #ffffff;
+  background-color: #000000;
   border-radius: 4px;
   transition: all .5s;
 }
@@ -153,7 +152,7 @@ li {
   bottom: 4px;
 }
 .open .toggle_btn span {
-  background-color: #fff;
+  background-color: #000000;
 }
 .open .toggle_btn span:nth-child(1) {
   -webkit-transform: translateY(10px) rotate(-315deg);
@@ -240,44 +239,6 @@ Pickup
 /*-------------------------------------------
 Feature
 -------------------------------------------*/
-#feature {
-  max-width: 1240px;
-  padding: 100px 16px 50px 16px;
-  margin: -50px auto 10px auto;
-}
-/*
-グリッドレイアウト
-要素の最小サイズは300pxで、画面の幅にあわせて要素の幅が自動で変化する
-repeatで全ての要素に対して適用
-「gap: 26px;」で行と列の隙間を設定
-*/
-#feature .grid {
-  display: grid;
-  gap: 26px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-#feature .grid .item {
-  transition: all  0.3s ease;
-  box-shadow: 0 0 8px 4px #ccc;
-}
-#feature .grid img {
-  vertical-align: top;
-}
-#feature .grid .item-content {
-  padding: 30px;
-}
-#feature .grid .item-cat {
-  font-size: 0.75rem;
-  margin-bottom: 20px;
-}
-#feature .grid .item-text {
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-#feature .grid .item-date {
-  font-size: 0.75rem;
-  text-align: right;
-}
 
 /*-------------------------------------------
 フッター
