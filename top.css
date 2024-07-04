@@ -73,8 +73,6 @@ li {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 20px 40px;
-  position: fixed;
   z-index: 10;
   background-color: #585858;
   overflow-x: hidden;
@@ -128,7 +126,6 @@ li {
 .toggle_btn {
   display: block;
   position: fixed;
-  top: 25px;
   right: 45px;
   width: 30px;
   height: 30px;
