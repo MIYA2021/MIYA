@@ -184,7 +184,59 @@ li {
 /*-------------------------------------------
 Main
 -------------------------------------------*/
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
 
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.news, .twitter-timeline {
+  flex: 1 1 calc(50% - 10px); /* 50% 幅で横並びにする */
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.news h2, .twitter-timeline h2 {
+  margin-top: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+}
+
+/* Container Query */
+@container (min-width: 600px) {
+  .container {
+      flex-direction: row;
+  }
+}
+
+@container (max-width: 599px) {
+  .container {
+      flex-direction: column;
+  }
+}
 /*-------------------------------------------
 Video
 -------------------------------------------*/
